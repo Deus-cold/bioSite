@@ -18,6 +18,7 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -35,6 +36,19 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Responsive Navigation */
+@media (max-width: 600px) {
+    nav ul {
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
 /* Main Content */
 .container {
     width: 80%;
@@ -48,7 +62,8 @@ nav ul li a:hover {
 
 /* Image Styling */
 .profile-image {
-    width: 300px; /* Smaller size */
+    width: 100%;
+    max-width: 300px;
     height: auto; /* Maintain aspect ratio */
     display: block;
     margin: 10px auto;
@@ -59,6 +74,7 @@ nav ul li a:hover {
 /* Figure and Caption Styling */
 figure {
     text-align: center;
+    margin: 20px 0;
 }
 
 figcaption {
@@ -76,3 +92,4 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
