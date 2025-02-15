@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
 /* Header Styling */
@@ -22,7 +23,7 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 15px;
 }
 
@@ -39,7 +40,6 @@ nav ul li a:hover {
 /* Responsive Navigation */
 @media (max-width: 600px) {
     nav ul {
-        text-align: center;
         padding: 10px;
     }
 
@@ -51,20 +51,20 @@ nav ul li a:hover {
 
 /* Main Content */
 .container {
-    width: 80%;
+    width: 90%; /* Ensures better fit on smaller screens */
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    overflow: hidden; /* Prevents content overflow */
 }
 
 /* Image Styling */
 .profile-image {
-    width: 100%;
-    max-width: 300px;
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensures image scales properly */
+    height: auto;
     display: block;
     margin: 10px auto;
     border-radius: 10px;
@@ -92,4 +92,3 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
