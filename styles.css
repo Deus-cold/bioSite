@@ -5,12 +5,12 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+    overflow-x: hidden; 
 }
 
 /* Header Styling */
 header {
-    background-color: #0073e6;
+    background-color: #d84e98; 
     color: white;
     padding: 20px;
     text-align: center;
@@ -51,7 +51,7 @@ nav ul li a:hover {
 
 /* Main Content */
 .container {
-    width: 90%; /* Ensures better fit on smaller screens */
+    width: 90%; 
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
@@ -84,7 +84,7 @@ figcaption {
 
 /* Footer */
 footer {
-    background-color: #0073e6;
+    background-color: #9b2d91; 
     color: white;
     text-align: center;
     padding: 15px;
